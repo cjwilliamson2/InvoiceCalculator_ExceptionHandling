@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceCalculator_ExceptionHandling", "InvoiceCalculator_ExceptionHandling\InvoiceCalculator_ExceptionHandling.csproj", "{D9B3B3BE-9A7E-4E3A-B053-D5EAC8C1257D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B3B3BE-9A7E-4E3A-B053-D5EAC8C1257D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B3B3BE-9A7E-4E3A-B053-D5EAC8C1257D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B3B3BE-9A7E-4E3A-B053-D5EAC8C1257D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B3B3BE-9A7E-4E3A-B053-D5EAC8C1257D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D7E1940-3E5D-4FC0-9704-F640B216C130}
+	EndGlobalSection
+EndGlobal
