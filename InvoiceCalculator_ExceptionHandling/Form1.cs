@@ -9,15 +9,26 @@ namespace InvoiceCalculator_ExceptionHandling
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            decimal subTotal = Convert.ToDecimal(txtSubTotal.Text);
+            try
+            {
+                decimal subTotal = Convert.ToDecimal(txtSubTotal.Text);
 
-            decimal discount = 0.10m;
+                decimal discount = 0.10m;
 
-            decimal discountAmount = subTotal * discount;
-            decimal total = subTotal - discountAmount;
+                decimal discountAmount = subTotal * discount;
+                decimal total = subTotal - discountAmount;
+                total *= 1000000000000000000000000000000000000000m;
+                txtDiscountAmount.Text = discountAmount.ToString();
+                txtTotal.Text = total.ToString();
+            } catch
+            {
+                MessageBox.Show("Please enter a valid decimal number in the SubTotal text box.", "Format Exception");
+                txtSubTotal.Text = "";
+                txtDiscountAmount.Text = "";
+                txtTotal.Text = "";
+            }
 
-            txtDiscountAmount.Text = discountAmount.ToString();
-            txtTotal.Text = total.ToString();
+            txtSubTotal.Focus();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
