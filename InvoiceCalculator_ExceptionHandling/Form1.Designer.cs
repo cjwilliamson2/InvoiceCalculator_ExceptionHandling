@@ -51,13 +51,16 @@
             // 
             txtDiscountPercentage.Location = new Point(195, 103);
             txtDiscountPercentage.Name = "txtDiscountPercentage";
+            txtDiscountPercentage.ReadOnly = true;
             txtDiscountPercentage.Size = new Size(100, 23);
             txtDiscountPercentage.TabIndex = 1;
+            txtDiscountPercentage.Text = "10%";
             // 
             // txtDiscountAmount
             // 
             txtDiscountAmount.Location = new Point(195, 154);
             txtDiscountAmount.Name = "txtDiscountAmount";
+            txtDiscountAmount.ReadOnly = true;
             txtDiscountAmount.Size = new Size(100, 23);
             txtDiscountAmount.TabIndex = 2;
             // 
@@ -65,6 +68,7 @@
             // 
             txtTotal.Location = new Point(195, 203);
             txtTotal.Name = "txtTotal";
+            txtTotal.ReadOnly = true;
             txtTotal.Size = new Size(100, 23);
             txtTotal.TabIndex = 3;
             // 
@@ -112,6 +116,7 @@
             btnCalculate.TabIndex = 8;
             btnCalculate.Text = "Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // btnExit
             // 
@@ -121,6 +126,7 @@
             btnExit.TabIndex = 9;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // Form1
             // 
